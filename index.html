@@ -3,16 +3,21 @@
 <head>
   <title>hellohere</title>
   <style>
+    body{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
     .c{
-     width: 200px;
-     height: 200px;
+     width: 1000px;
+     height: 1000px;
      background-color: red;
     }
   </style>
 </head>
 <body>
   <div class="c" onclick="cc(this)"></div>
-  <p style="text-decoration : underline; color: red">click on the square</p>
+  <p style="text-decoration : underline; color: red; font-size : 100px">click on the square</p>
   <script>
     function cc(element){
       if(element.style.backgroundColor === 'green'){
