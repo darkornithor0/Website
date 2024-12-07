@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   <title>hellohere</title>
   <style>
     body{
       display: flex;
       align-items: center;
       flex-direction: column;
+      background: linear-gradient(0deg,#3284A4,#BE8825);
+     min-height:100vh ;
     }
     .c{
      width: 1000px;
      height: 1000px;
      background-color: red;
+     border-radius: 70px;
+     margin-bottom: 10px;
+    }
+    .t{
+      color: red;
+      font-size: 200px;
+      font-family: 'Monsieur La Doulaise';
+      margin: 0;
+      text-decoration: underline;
+      text-decoration-thickness: 5px;;
     }
   </style>
 </head>
 <body>
   <div class="c" onclick="cc(this)"></div>
-  <p style="text-decoration : underline; color: red; font-size : 100px">click on the square</p>
+  <p class="t">click on the square</p>
   <script>
     function cc(element){
       if(element.style.backgroundColor === 'green'){
